@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #cron alle 20 min
-#*/20 * * * * /usr/local/bin/ipr
+#*/20 * * * * /usr/local/bin/regip4.sh
 
 # --------------------------------------------------
 FQDN=(domain.de. www.domain.de. mail.domain.de. email.domain.de. ftp.domain.de. server.domain.de.)
