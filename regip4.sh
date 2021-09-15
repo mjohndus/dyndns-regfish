@@ -20,9 +20,8 @@ function set_ip4 {
 function update_ipv4 {
     for fq4 in "${FQDN[@]}"
         do cod=`curl -s 'https://dyndns.regfish.de/?fqdn='$fq4'&thisipv4=1&forcehost=0&authtype=secure&token='$TOKEN`
-        #echo "https://dyndns.regfish.de/?fqdn="$fq4"&thisipv4=1&forcehost=1&authtype=secure&token="$TOKEN""
         done
-        echo $cod
+        #echo $cod
     if [ "$cod" = "success|100|update succeeded!" -o "$cod" = "success|101|already up-to-date!" ];then
         echo $aip4 > $dir/ip4
     fi
